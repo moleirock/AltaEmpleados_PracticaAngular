@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-font:'Roboto', sans-serif;
+    --azul:#0066FF;
+    --blanco:#fff;
+    --negro:#000;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    background-image: url(../src/assets/img/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: var(--blanco);
+}
+h1{
+    font-size: 3.2rem;
+}

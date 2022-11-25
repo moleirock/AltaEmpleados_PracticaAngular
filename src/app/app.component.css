@@ -1,0 +1,63 @@
+.form-alta {
+  border: solid;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 50rem;
+  margin: 2rem auto;
+}
+.form-alta__title {
+  text-align: center;
+  margin: 1rem 0;
+}
+.form-alta__entrada {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+.campo label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.campo input {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.btn{
+  border: unset;
+  border-radius: 1rem;
+  background-color: var(--azul);
+  color: var(--blanco);
+  font-weight: bold;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.btn:hover{
+transform: scale(1.1);
+}
+
+.lista-empleados {
+  color: var(--negro);
+}
+.lista-empleados:nth-child(even) {
+  color: blue;
+}
+.empleado-item {
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+}
+.empleado-item:nth-child(even) {
+  color: blue;
+}
+hr {
+  margin: 1.5rem 0;
+}
