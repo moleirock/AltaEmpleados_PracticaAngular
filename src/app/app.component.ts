@@ -8,11 +8,13 @@ import { Empleado } from 'src/models/empleado.modelo';
 export class AppComponent {
   title:string = 'AltaEmpleados';
   empleados:Array<Empleado>=[];
+  nombre:string = "";
+  apellido:string="";
+  cargo:string="";
   salario:number=0;
   
-  agregarEmpleado(nombre:string,apellido:string,cargo:string,salario:string){
-    this.salario=Number(salario);
-    this.empleados.push(new Empleado(nombre,apellido,cargo,this.salario));
+  agregarEmpleado(nombre:string,apellido:string,cargo:string,salario:number){
+    this.empleados.push(new Empleado(nombre,apellido,cargo,salario));
   }
 
 }

@@ -3,6 +3,9 @@
     --azul:#0066FF;
     --blanco:#fff;
     --negro:#000;
+    --rojo:#960000;
+    --gris-oscuro:rgb(90, 90, 90);
+    --gris-claro:rgb(194, 194, 194);
 }
 
 *,*:before,*:after{
@@ -20,8 +23,6 @@ body{
     background-image: url(../src/assets/img/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
     color: var(--blanco);
 }
 h1{

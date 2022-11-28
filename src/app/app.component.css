@@ -38,8 +38,17 @@
   margin: 0 auto;
   cursor: pointer;
 }
+.btn--disabled{
+  color: var(--gris-claro);
+  background-color: var(--gris-oscuro);
+  cursor: not-allowed;
+}
+
 .btn:hover{
 transform: scale(1.1);
+}
+.btn--disabled:hover{
+  transform: unset;
 }
 
 .lista-empleados {
