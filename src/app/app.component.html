@@ -1,37 +1,37 @@
 <section class="form-alta">
-  <h1 class="form-alta__title">Alta de empleados</h1>
-  <div class="form-alta__entrada">
-    <div class="campo">
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre"  [(ngModel)]="nombre"> 
-    </div>
-    <div class="campo">
-      <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" [(ngModel)]="apellido">
-    </div>
-    <div class="campo">
-      <label for="cargo">Cargo:</label>
-      <input type="text" name="cargo" [(ngModel)]="cargo">
-    </div>
-    <div class="campo">
-      <label for="salario">Salario:</label>
-      <input type="number" name="salario" [(ngModel)]="salario">
+    <h1 class="form-alta__title">Alta de empleados</h1>
+    <div class="form-alta__entrada">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" [(ngModel)]="nombre">
+        </div>
+        <div class="campo">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" [(ngModel)]="apellido">
+        </div>
+        <div class="campo">
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" [(ngModel)]="cargo">
+        </div>
+        <div class="campo">
+            <label for="salario">Salario:</label>
+            <input type="number" name="salario" [(ngModel)]="salario">
+        </div>
+
+        <input *ngIf="nombre && apellido && cargo && salario else btnDisabled" type="button" value="Agregar" class="btn"
+            (click)="agregarEmpleado(nombre,apellido,cargo,salario)">
+        <ng-template #btnDisabled>
+            <input type="button" value="Rellena los campos" class="btn btn--disabled">
+        </ng-template>
+
+
     </div>
 
-    <input *ngIf="nombre && apellido && cargo && salario else btnDisabled" type="button" value="Agregar" class="btn"
-      (click)="agregarEmpleado(nombre,apellido,cargo,salario)">
-    <ng-template #btnDisabled>
-      <input type="button" value="Rellena los campos" class="btn btn--disabled">
-    </ng-template>
-
-    
-  </div>
-
-  <div class="lista-empleados" *ngFor="let empleado of empleados">
-    <p class="empleado-item">{{empleado.id}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.salario}} <span
-        [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>
-    </p>
-    <hr *ngIf="empleado.id%5==0">
-  </div>
+    <div class="lista-empleados" *ngFor="let empleado of empleados">
+        <p class="empleado-item">{{empleado.id}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.salario}} <span
+                [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>
+        </p>
+        <hr *ngIf="empleado.id%5==0">
+    </div>
 
 </section>
