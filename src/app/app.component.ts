@@ -14,7 +14,18 @@ export class AppComponent {
   salario:number=0;
   
   agregarEmpleado(nombre:string,apellido:string,cargo:string,salario:number){
-    this.empleados.push(new Empleado(nombre,apellido,cargo,salario));
+    if(!this.checkApellido(apellido)){
+      this.empleados.push(new Empleado(nombre,apellido,cargo,salario));
+    }
+  }
+
+  checkApellido(apellido:string):boolean{
+    for (const empleado of this.empleados) {
+      if(empleado.apellido==apellido){
+        return true;
+      }
+    }
+    return false;
   }
 
 }

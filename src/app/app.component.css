@@ -26,6 +26,12 @@
   padding: 1rem;
   border-radius: 1rem;
 }
+.borderRed{
+  border: solid var(--rojo);
+}
+.borderGreen{
+  border: solid var(--verde) 3px;
+}
 .btn{
   border: unset;
   border-radius: 1rem;
@@ -70,3 +76,5 @@ transform: scale(1.1);
 hr {
   margin: 1.5rem 0;
 }
+
+
