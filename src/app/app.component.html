@@ -7,7 +7,7 @@
     </div>
     <div class="campo">
       <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" [(ngModel)]="apellido">
+      <input type="text" name="apellido" [(ngModel)]="apellido" [ngClass]="{existeApellido:existeApellidos(apellido)}">
     </div>
     <div class="campo">
       <label for="cargo">Cargo:</label>
@@ -18,7 +18,7 @@
       <input type="number" name="salario" [(ngModel)]="salario">
     </div>
 
-    <input *ngIf="nombre && apellido && cargo && salario else btnDisabled" type="button" value="Agregar" class="btn"
+    <input *ngIf="nombre && apellido && cargo && salario && !existeApellidos(apellido) else btnDisabled" type="button" value="Agregar" class="btn"
       (click)="agregarEmpleado(nombre,apellido,cargo,salario)">
     <ng-template #btnDisabled>
       <input type="button" value="Rellena los campos" class="btn btn--disabled">

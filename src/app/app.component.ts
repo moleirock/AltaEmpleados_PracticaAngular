@@ -17,4 +17,13 @@ export class AppComponent {
     this.empleados.push(new Empleado(nombre,apellido,cargo,salario));
   }
 
+  existeApellidos(apellido:string){
+    for (const empleado of this.empleados) {
+        if(empleado.apellido == apellido){
+          return true
+        }
+    }
+    return false;
+  }
+
 }
