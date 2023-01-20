@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CracEmpComponent } from './crac-emp.component';
+import { CracEmpComponent } from './carac-emp.component';
 
 describe('CracEMpComponent', () => {
   let component: CracEmpComponent;
@@ -8,9 +8,8 @@ describe('CracEMpComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CracEmpComponent ]
-    })
-    .compileComponents();
+      declarations: [CracEmpComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CracEmpComponent);
     component = fixture.componentInstance;

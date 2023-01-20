@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Input,Output,EventEmitter } from '@angular/core';
 @Component({
-  selector: 'app-crac-emp',
-  templateUrl: './crac-emp.component.html',
-  styleUrls: ['./crac-emp.component.css']
+  selector: 'app-carac-emp',
+  templateUrl: './carac-emp.component.html',
+  styleUrls: ['./carac-emp.component.css']
 })
-export class CracEmpComponent implements OnInit {
+export class CaracEmpComponent implements OnInit {
   @Output() caracTemp = new EventEmitter<String>();
   constructor() { }
 

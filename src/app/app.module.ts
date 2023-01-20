@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { DirectivaLiDirective } from './directiva-li.directive';
 import { BorderGreenDirective } from './border-green.directive';
 import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.component';
-import { CracEmpComponent } from './crac-emp/crac-emp.component';
+import { CaracEmpComponent } from './carac-emp/carac-emp.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +14,10 @@ import { CracEmpComponent } from './crac-emp/crac-emp.component';
     DirectivaLiDirective,
     BorderGreenDirective,
     ListaEmpleadosComponent,
-    CracEmpComponent
+    CaracEmpComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

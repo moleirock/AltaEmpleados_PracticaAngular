@@ -1,5 +1,12 @@
-<li directivaLi appBorderGreen [cargo]="empleado.cargo" class="empleado-item">{{empleado.id}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.salario}} <span
-    [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>
-</li> 
-<app-carac-emp (caracTemp)="agregarCaracteristica($event)"></app-carac-emp>
+<li directivaLi appBorderGreen [cargo]="empleado.cargo" class="empleado-item">
+    <p>
+        {{empleado.id}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.salario}} <span
+            [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>
+    </p>
+    <ng-container *ngFor="let caracteristica of arrayCaracteristicas">
+        <p>{{caracteristica}}</p>
+    </ng-container>
+    <app-carac-emp (caracTemp)="agregarCaracteristica($event)"></app-carac-emp>
+</li>
+
 <hr *ngIf="empleado.id%5==0">
