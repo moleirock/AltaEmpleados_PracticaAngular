@@ -1,0 +1,5 @@
+<li directivaLi appBorderGreen [cargo]="empleado.cargo" class="empleado-item">{{empleado.id}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.salario}} <span
+    [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>
+</li> 
+<app-carac-emp (caracTemp)="agregarCaracteristica($event)"></app-carac-emp>
+<hr *ngIf="empleado.id%5==0">

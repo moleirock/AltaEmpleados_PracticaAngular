@@ -26,7 +26,13 @@
   padding: 1rem;
   border-radius: 1rem;
 }
-.btn{
+.borderRed {
+  border: solid var(--rojo);
+}
+.borderGreen {
+  border: solid var(--verde) 3px;
+}
+.btn {
   border: unset;
   border-radius: 1rem;
   background-color: var(--azul);
@@ -38,19 +44,23 @@
   margin: 0 auto;
   cursor: pointer;
 }
-.btn--disabled{
+.btn--disabled {
   color: var(--gris-claro);
   background-color: var(--gris-oscuro);
   cursor: not-allowed;
 }
 
-.btn:hover{
-transform: scale(1.1);
+.btn:hover {
+  transform: scale(1.1);
 }
-.btn--disabled:hover{
+.btn--disabled:hover {
   transform: unset;
 }
 
+.listado__titulo{
+  text-align: center;
+  margin: 1rem 0;
+}
 .lista-empleados {
   color: var(--negro);
 }
@@ -69,9 +79,4 @@ transform: scale(1.1);
 }
 hr {
   margin: 1.5rem 0;
-}
-
-.existeApellido{
-  border: red 4px solid;
-
 }
