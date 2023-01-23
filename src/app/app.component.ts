@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Empleado } from 'src/models/empleado.modelo';
+import { VisualizarService } from './services/visualizar.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,9 +13,12 @@ export class AppComponent {
   apellido:string="";
   cargo:string="";
   salario:number=0;
-  
+
+  visualizar:VisualizarService = new VisualizarService();
+
   agregarEmpleado(nombre:string,apellido:string,cargo:string,salario:number){
     if(!this.checkApellido(apellido)){
+      this.visualizar.printParameter(nombre);
       this.empleados.push(new Empleado(nombre,apellido,cargo,salario));
     }
   }

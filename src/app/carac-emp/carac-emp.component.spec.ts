@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CracEmpComponent } from './carac-emp.component';
+import { CaracEmpComponent } from './carac-emp.component';
 
 describe('CracEMpComponent', () => {
-  let component: CracEmpComponent;
-  let fixture: ComponentFixture<CracEmpComponent>;
+  let component: CaracEmpComponent;
+  let fixture: ComponentFixture<CaracEmpComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CracEmpComponent],
+      declarations: [CaracEmpComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CracEmpComponent);
+    fixture = TestBed.createComponent(CaracEmpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

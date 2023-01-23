@@ -1,0 +1,25 @@
+label {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #000;
+}
+input {
+  padding: 0.5rem;
+  border-radius: .5rem;
+  margin: 1rem 1rem;
+}
+
+button {
+  border: unset;
+  border-radius: .5rem;
+  background-color: var(--azul);
+  color: var(--blanco);
+  font-weight: bold;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+}

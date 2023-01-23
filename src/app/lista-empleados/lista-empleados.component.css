@@ -1,21 +1,24 @@
 .lista-empleados {
-    color: var(--negro);
-  }
-  .lista-empleados:nth-child(even) {
-    color: blue;
-  }
-  .empleado-item {
-    font-weight: bold;
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: var(--blanco);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .empleado-item:nth-child(even) {
-    color: blue;
-  }
-  hr {
-    margin: 1.5rem 0;
-  }
+  color: var(--negro);
+}
+.lista-empleados:nth-child(even) {
+  color: blue;
+}
+.empleado-item {
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.empleado-item:nth-child(even) {
+  color: blue;
+}
+hr {
+  margin: 1.5rem 0;
+}
+.caracteristica__item {
+  color: #000;
+}

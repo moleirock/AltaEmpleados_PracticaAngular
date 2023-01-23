@@ -4,7 +4,7 @@
             [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>
     </p>
     <ng-container *ngFor="let caracteristica of arrayCaracteristicas">
-        <p>{{caracteristica}}</p>
+        <p class="caracteristica__item">{{caracteristica}}</p>
     </ng-container>
     <app-carac-emp (caracTemp)="agregarCaracteristica($event)"></app-carac-emp>
 </li>

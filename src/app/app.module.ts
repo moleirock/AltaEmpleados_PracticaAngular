@@ -1,3 +1,4 @@
+import { VisualizarService } from './services/visualizar.service';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,7 @@ import { CaracEmpComponent } from './carac-emp/carac-emp.component';
     CaracEmpComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [VisualizarService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
