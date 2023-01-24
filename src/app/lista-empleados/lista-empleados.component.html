@@ -1,4 +1,4 @@
-<li directivaLi appBorderGreen [cargo]="empleado.cargo" class="empleado-item">
+<li directivaLi appBorderGreen  class="empleado-item"[cargo]="empleado.cargo">
     <p>
         {{empleado.id}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.salario}} <span
             [ngStyle]="{'color': empleado.cargo=='Botones'?'green':empleado.cargo=='Director'?'red':empleado.id%2==0?'blue':'black'} ">{{empleado.cargo}}</span>

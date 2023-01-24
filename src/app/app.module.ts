@@ -1,3 +1,4 @@
+import { EmpleadosService } from './services/empleados.service';
 import { VisualizarService } from './services/visualizar.service';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +19,7 @@ import { CaracEmpComponent } from './carac-emp/carac-emp.component';
     CaracEmpComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [VisualizarService],
+  providers: [VisualizarService,EmpleadosService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

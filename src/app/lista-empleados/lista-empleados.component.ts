@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input,Output,EventEmitter } from '@angular/core';
-import { Empleado } from 'src/models/empleado.modelo';
+import { Empleado } from 'src/app/models/empleado.modelo';
 @Component({
   selector: 'app-lista-empleados',
   templateUrl: './lista-empleados.component.html',
@@ -16,5 +16,5 @@ export class ListaEmpleadosComponent implements OnInit {
   agregarCaracteristica(caracteristica: String){
     this.arrayCaracteristicas.push(caracteristica);
   }
- 
+
 }
